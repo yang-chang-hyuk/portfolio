@@ -1,0 +1,373 @@
+.container-fluid-header {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "top-header";
+}
+
+.header-top {
+    grid-area: top-header;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba( 255, 255, 255, 0.5 );
+    border-radius: 1.2rem;
+}
+
+.name {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.name:hover {
+    opacity: 0.5;
+}
+
+.about-me {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10%;
+    color: #000;
+}
+
+.about-me:hover {
+    opacity: 0.5;
+}
+
+.skills {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10%;
+    color: #000;
+}
+
+.skills:hover {
+    opacity: 0.5;
+}
+
+.archiving {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10%;
+    color: #000;
+}
+
+.archiving:hover {
+    opacity: 0.5;
+}
+
+.projects {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10%;
+    color: #000;
+}
+
+.projects:hover {
+    opacity: 0.5;
+}
+
+.footer {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10%;
+    color: #000;
+}
+
+.more {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: 18%;
+    
+}
+
+.more:hover {
+    opacity: 0.5;
+}
+
+.footer:hover {
+    opacity: 0.5;
+}
+
+.container-fluid-top {
+    background-image: url(./img/back.jpg);
+    background-repeat: no-repeat;
+    /* 배경 반복 제거 */
+    border: 1px solid white;
+    background-size: cover;
+    /* 화면 꽉 채우기 */
+    /* width: 100vw; */
+    height: 100vh;
+    /* 높이 자동으로 맞추기 */
+}
+
+.container-fluid-about {
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "top-about top-about top-about"
+        "name-about birth-about address-about"
+        "contact-about email-about education-about";
+}
+
+.about-top {
+    grid-area: top-about;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 3%;
+}
+
+.about-name {
+    grid-area: name-about;
+    margin-bottom: 6%;
+}
+
+.about-birth {
+    grid-area: birth-about;
+}
+
+.about-address {
+    grid-area: address-about;
+
+}
+
+.about-contact {
+    grid-area: contact-about;
+}
+
+.about-email {
+    grid-area: email-about;
+}
+
+.about-education {
+    grid-area: education-about;
+}
+
+.container-fluid-skill {
+    margin-top: 5%;
+    text-align: center;
+    background-color: #F9C51D;
+    display: grid;
+    grid-template-areas:
+        "top-skill top-skill top-skill"
+        "end-front end-back control-version"
+        "database  .  server";
+}
+
+.skill-top {
+    grid-area: top-skill;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 3%;
+}
+
+.front-end {
+    margin-left: 30%;
+    margin-bottom: 10%;
+    width: 60%;
+    grid-area: end-front;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1.2rem;
+}
+
+.back-end {
+    margin-left: 20%;
+    width: 60%;
+    grid-area: end-back;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1.2rem;
+}
+
+.version-control {
+    width: 60%;
+    grid-area: control-version;
+    margin-bottom: 10%;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1.2rem;
+}
+
+.database {
+    grid-area: database;
+    width: 60%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1.2rem;
+}
+
+.server {
+    width: 60%;
+    grid-area: server;
+    margin-bottom: 10%;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1.2rem;
+}
+
+.container-fluid-archiving {
+    display: grid;
+    background-color: #282828;
+    grid-template-areas:
+        " . top-archicing . "
+        " . github . ";
+}
+
+.archiving-top {
+    text-align: center;
+    grid-area: top-archicing;
+    margin-top: 3%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.github {
+    grid-area: github;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1.2rem;
+    margin: 0% 30% 10% 30%;
+}
+
+.container-fluid-projects {
+    text-align: center;
+    display: grid;
+    background-color: #1D809F;
+    grid-template-areas:
+        "top-projects top-projects"
+        "name-shar name-shar"
+        "sharing-car sharing-car"
+        "project-hr project-hr"
+        "name-port  name-port"
+        "middle-port middle-port"
+        ;
+}
+
+.projects-top {
+    grid-area: top-projects;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.shar-name {
+    grid-area: name-shar;
+    text-align: center;
+    background-color: white;
+    border-radius: 1.2rem;
+    margin: 2% 30% 2% 30%;
+}
+
+.car-sharing {
+    grid-area: sharing-car;
+    text-align: center;
+    background-color: white;
+    border-radius: 1.2rem;
+    margin: 0% 20% 2% 20%;
+    padding-top: 2%;
+}
+
+.port-name {
+    grid-area: name-port;
+    text-align: center;
+    background-color: white;
+    border-radius: 1.2rem;
+    margin: 2% 30% 2% 30%;
+}
+
+.port-mibble {
+    grid-area: middle-port;
+    text-align: center;
+    background-color: white;
+    border-radius: 1.2rem;
+    margin: 0% 20% 2% 20%;
+    padding-top: 2%;
+}
+
+.hr-project {
+    grid-area: project-hr;
+    color: #fff;
+}
+
+.container-fluid-footer {
+    text-align: center;
+    display: grid;
+    background-color: #282828;
+    grid-template-areas: 
+    "top-footer"
+    "middle-footer"
+    ;
+}
+
+.footer-top {
+    grid-area: top-footer;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-middle {
+    grid-area: middle-footer;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 480px) {
+    .container-fluid-header {
+        float: none;
+        width: auto;
+    }
+
+    .name {
+        float: none;
+        width: auto;
+    }
+
+    .about-me {
+        float: none;
+        width: auto;
+    }
+
+    .skills {
+        float: none;
+        width: auto;
+    }
+
+    .archiving {
+        float: none;
+        width: auto;
+    }
+
+    .projects {
+        float: none;
+        width: auto;
+    }
+
+    .career {
+        float: none;
+        width: auto;
+    }
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container-fluid-header span a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-fluid-footer a {
+    color: white;
+    text-decoration: none;
+}
