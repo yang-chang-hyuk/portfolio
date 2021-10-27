@@ -241,9 +241,12 @@
     background-color: #1D809F;
     grid-template-areas:
         "top-projects top-projects"
+        "name-myblog name-myblog"
+        "blog-my blog-my"
+        "project-hr-1 project-hr-1"
         "name-shar name-shar"
         "sharing-car sharing-car"
-        "project-hr project-hr"
+        "project-hr-2 project-hr-2"
         "name-port  name-port"
         "middle-port middle-port"
         ;
@@ -256,6 +259,23 @@
     font-size: 3rem;
     font-weight: bold;
     color: #fff;
+}
+
+.myblog-name {
+    grid-area: name-myblog;
+    text-align: center;
+    background-color: white;
+    border-radius: 1.2rem;
+    margin: 2% 30% 2% 30%;
+}
+
+.my-blog {
+    grid-area: blog-my;
+    text-align: center;
+    background-color: white;
+    border-radius: 1.2rem;
+    margin: 0% 20% 2% 20%;
+    padding-top: 2%;
 }
 
 .shar-name {
@@ -292,8 +312,13 @@
     padding-top: 2%;
 }
 
-.hr-project {
-    grid-area: project-hr;
+.hr-project-1 {
+    grid-area: project-hr-1;
+    color: #fff;
+}
+
+.hr-project-2 {
+    grid-area: project-hr-2;
     color: #fff;
 }
 
